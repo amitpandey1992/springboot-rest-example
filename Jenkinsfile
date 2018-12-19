@@ -24,10 +24,10 @@ stages {
  stage('Docker Build and push'){
   steps{
    script{
-    sh 'sudo docker build -t mittalyash32/myapp .'
+    sh 'sudo docker build -t amitpandey1992/demo .'
      sh " sudo docker login -u=$env.dockerid -p=$env.dockerpassword"
-     sh " sudo docker push mittalyash32/myapp "
-     //sh "sudo docker run -p 8081:9080 mittalyash32/myapp "
+     sh " sudo docker push amitpandey1992/demo "
+     //sh "sudo docker run -p 8081:9080 amitpandey1992/demo "
      //sh "kubectl create -f ApplicationDeployment.yaml -n devops3"
    
         }
